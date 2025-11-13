@@ -167,6 +167,35 @@
       border-top: 1px solid rgba(55, 65, 81, 0.8);
     }
 
+    /* Layout for card with video */
+.card-media {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Let text take remaining space */
+.card-media-text {
+  flex: 1;
+}
+
+/* Tidy the video container */
+.card-media .vid {
+  position: relative;
+  padding-left: 0;      /* remove the left padding on this one */
+  flex-shrink: 0;       /* don’t let the video get squashed too weirdly */
+}
+
+/* Make video responsive */
+.card-media .vid video {
+  display: block;
+  max-width: 220px;     /* desktop cap */
+  width: 100%;          /* but shrink on small screens */
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+
     .dark-mode{
       background-color: #121212 ;
       color:white
@@ -268,10 +297,27 @@ body.dark-mode .theme-toggle-icon {
 
 
     @media (max-width: 700px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-    }
+      @media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack the Need for Sasquatch card vertically on mobile */
+  .card-media {
+    flex-direction: column;
+  }
+
+  .card-media .vid {
+    width: 100%;
+  }
+
+  .card-media .vid video {
+    max-width: 100%;
+  }
+}
+
+}
