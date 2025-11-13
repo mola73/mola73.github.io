@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Muhammad-Alfatih Olaniyan | Tech Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="tag">Tech portfolio</div>
+    <h1>Muhammad-Alfatih Olaniyan</h1>
+    <div class="subtitle">
+      Computer Science student • Software & Data developer • Human–robot interaction @ UNBC Robotics Lab
+    </div>
+    <div class="links">
+      <span class="pill">Prince George, BC</span>
+      <a class="pill" href="mailto:molaniyan@unbc.ca">molaniyan@unbc.ca</a>
+      <a class="pill" href="https://github.com/mola73" target="_blank">GitHub</a>
+      <a class="pill" href="https://www.linkedin.com/in/muhammad-alfatih-olaniyan-88621030b" target="_blank">LinkedIn</a>
+      <a class="pill" href="Muhammad_Olaniyan_Resume.pdf" target="_blank">Resume</a>
+      <button id="toggleBtn" class="pill theme-toggle" type="button" aria-label="Toggle dark mode">
+  <span class="theme-toggle-icon">☀️</span>
+</button>
+
+    </div>
+    <script>
+      
+  const btn = document.getElementById("toggleBtn");
+  const icon = btn.querySelector(".theme-toggle-icon");
+
+  btn.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark-mode");
+    icon.textContent = isDark ? "🌙" : "☀️";
+  });
+</script>
+
+    </script>
+  </header>
+
+  <main>
+    <section class="two-col">
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m a Computer Science student focused on building software that has real human impact.
+          I’ve worked on autonomous educational games with QTrobot, data-driven web apps in Django,
+          and tools that make learning more engaging for kids.
+        </p>
+        <p style="margin-top: 0.5rem;">
+          I enjoy working across the stack: Python & data pipelines on the backend, and clean,
+          intuitive experiences in the browser on the frontend.
+        </p>
+      </div>
+      <div>
+        <h2>Skills</h2>
+        <div class="badge-list">
+          <span class="badge" style="background:  #2ecc71;">Python</span>
+          <span class="badge" style="background-color:#2ecc71">Java</span>
+          <span class="badge" style="background-color: #3498db">JavaScript</span>
+          <span class= "badge" style= "background-color:#2ecc71">Django</span>
+          <span class= "badge" style="background-color:#f1c40f">ROS</span>
+          <span class="badge" style="background-color:#3498db">HTML/CSS</span>
+          <span class="badge" style="background-color: #3498db">Pandas</span>
+          <span class="badge" style="background-color:#3498db">scikit-learn</span>
+          <span class="badge" style="background-color:#2ecc71">Git</span>
+          <span class="badge" style="background-color: #f1c40f">React</span>
+          <span class="badge" style="background-color:#3498db">C</span>
+           <span class="badge" style="background-color:#f1c40f">XML</span>
+        </div>
+        <br>
+         <div class="badge-list">
+         <h3 style="font-size : 14px">Proficiency: </h3>
+      
+          <div class="badge-list" style="font-size: 12px">
+            <div style=" display: flex; align-items: center;  ">
+              <div style=" width: 15px; height: 15px; background-color:#2ecc71; border-radius: 50%; margin-right: 8px "></div>
+              <span>Advanced</span>
+            </div>
+            <div style="  display: flex; align-items: center;  ">
+              <div style=" width: 15px; height: 15px; background-color: #3498db; border-radius: 50%; margin-right: 8px"></div>
+              <span>Proficient</span>
+            </div>
+            <div style=" display: flex; align-items: center; margin-bottom: 5px">
+              <div style=" width: 15px; height: 15px; background-color: #f1c40f; border-radius: 50%; margin-right: 8px "></div>
+              <span>Beginner</span>
+            </div>
+            
+          </div></div>
+        </div>
+       
+         
+          
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div style="display: flex;" class="card">
+        <div style ="display: block;" class="card-header">
+          <div class="card-title">Need For Sasquatch – Mobile App Game</div>
+          <div class="card-tag">Android Studio• Java • XML</div>
+          <div><p><br>
+          Need for Sasquatch is a 2D mobile racing game designed for casual players who enjoy fast-paced, 
+          easy-to-pick-up gameplay. Built in Java using Android Studio, the game features three unique game modes, 
+          each offering a different objective and challenge to keep gameplay fresh and engaging
+        <br><br>
+      Dash Mode: An endless runner where the player avoids oncoming cars and road hazards while the vehicle’s speed increases over time. The game ends upon any collision.
+<br><br>Destruction Mode: A chaotic mode where the goal is to hit as many cars as possible before time runs out. Power-ups occasionally extend the timer to keep the game going.
+<br><br>Runaway Mode: The player races toward a final checkpoint while avoiding traps and police vehicles. With limited lives, the player must reach all checkpoints to win.</p></div>
+         <div class="card-footer">
+          <span>Role: Team lead & Developer</span>
+          <!-- <a href="#" target="_blank">View project</a> -->
+        </div>
+        </div>
+        
+        
+       
+         <div class="vid">
+            <video  width="200" controls autoplay muted>
+            <source src="needforsasquatch.mp4" type="video/mp4">
+          </video></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Maze Runner – QTrobot educational game</div>
+          <div class="card-tag">Django • JavaScript • ROS</div>
+        </div>
+        <p>
+          Web-based maze game connected to QTrobot that teaches children problem solving.
+          Includes real-time robot speech and gestures, difficulty scaling, and automatic game-log
+          collection for research.
+        </p>
+        <div class="card-footer">
+          <span>Role: Full-stack developer</span>
+          <!-- Replace with real link when public -->
+          <!-- <a href="#" target="_blank">View project</a> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">BC WIldfire Explorer – Health Geography Insights</div>
+          <div class="card-tag">React • JS • Data Visualization</div>
+        </div>
+        <p>
+           A web-based visualization tool built with React that displays key environmental and public-health data through interactive charts and maps. Designed to make complex environmental indicators easy to understand for communities, researchers, and decision-makers.
+        </p>
+        <div class="card-footer">
+          <span>Role: Main Developer</span>
+          <a  class="badge1" href="https://mola73.github.io/env-health-dashboard/">Demo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Qur’an Connections</div>
+          <div class="card-tag">Django • Web design</div>
+        </div>
+        <p>
+          Website for my Qur’an teaching initiative, offering Tajweed, memorization,
+          and reading support for kids, adults, and new Muslims.
+        </p>
+        <div class="card-footer">
+          <span>Role: Main Developer</span>
+          <a class="badge1" href="https://quranconnections.com" target="_blank">🌐Website</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Research Assistant – UNBC Robotics Lab</div>
+          <div class="card-tag">Jun 2025 – Present</div>
+        </div>
+        <p>
+          Building and deploying autonomous educational games integrated with QTrobot using
+          HTML, JavaScript, Django, and ROS. Implemented real-time APIs and data pipelines for
+          large-scale classroom deployments.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Leadership – UNBC Muslim Students Association</div>
+          <div class="card-tag">President / VP Roles</div>
+        </div>
+        <p>
+          Led a student organization focused on community, events, and spiritual growth.
+          Coordinated teams, organized campus-wide events, and managed communication
+          between students and university services.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        I’m open to internships and new grad roles in software engineering, data, or robotics.
+        The best way to reach me is by email:
+        <a href="mailto:molaniyan@unbc.ca">molaniyan@unbc.ca</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Muhammad-Alfatih Olaniyan
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
