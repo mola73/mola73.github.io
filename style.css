@@ -152,7 +152,7 @@
     .card-footer {
       margin-top: 0.5rem;
       font-size: 0.8rem;
-      color: #9ca3af;
+      color: black;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
@@ -210,7 +210,8 @@ body.dark-mode .card-title,
 body.dark-mode .card-tag,
 body.dark-mode p,
 body.dark-mode span,
-body.dark-mode .badge {
+body.dark-mode .badge
+body.dark-mode .card-footer {
   color: white;
 }
 
